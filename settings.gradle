@@ -1,0 +1,6 @@
+rootProject.name = 'client'
+include 'lsim-sms'
+include 'email'
+include 'common'
+include 'fcm'
+

@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'client'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":common")
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    compile("javax.mail:mail:${mailVersion}")
+
+    testCompile "org.mockito:mockito-core:${mockitoVersion}"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

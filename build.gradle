@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+ext {
+    mailVersion = '1.4.7'
+    orgJsonVersion = '20180813'
+    apacheHttpClientVersion = '4.5.7'
+    junitVersion = '4.12'
+    mockitoVersion = '2.+'
+    lombokVersion = '1.16.20'
+    orgJsonVersion = '20180813'
+    apacheHttpClientVersion = '4.5.7'
+}
+
+group 'client'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testCompile "org.mockito:mockito-core:${mockitoVersion}"
+    testCompile "junit:junit:${junitVersion}"
+}
