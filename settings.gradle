@@ -3,4 +3,6 @@ include 'lsim-sms'
 include 'email'
 include 'common'
 include 'fcm'
+include 'kafka-consumer'
+include 'kafka-producer'
 
